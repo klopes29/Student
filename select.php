@@ -18,6 +18,17 @@ if ($conn->connect_error) {
 //Display Data
 $sql ="Select * from student";
 $result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    echo "<table ><tr><th>Name</th><th>Address</th><th>Rollno</th><th>Gender</th><th>D.O.B</th></tr>";
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<tr><td>".$row["name"]."</td><td>".$row["address"]."</td><td>".$row["rollno"]."</td><td>".$row["gender"]."</td><td>".$row["bday"]."</td></tr>";
+    }
+    echo "</table>";
+} else {
+    echo "0 results";
+}
 ?>
 <html>
 <head><title>table data</title></head>
@@ -63,38 +74,11 @@ tr:hover{background-color:#f5f5f5}
 </style>
 <body>
 <p>Student Database</p><br>
-<table align="Center">
+
 <div id="image">
     <img src="logo.jpeg" alt="..." />
 </div>
-<tr>
-<th>Name</th>
-<th>Address</th>
-<th>Rollno</th>
-<th>Gender</th>
-<th>Date Of Birth</th>
-</tr>
 
-
-<?php
-//print_r($result->fetch_assoc());
-while($row=$result->fetch_assoc()){
-
-?>
-<tr>
-	<td><?php echo $row['name'] ;?></td>
-	<td><?php echo $row['address'] ;?></td>
-	<td><?php echo $row['rollno'] ;?></td>
-	<td><?php echo $row['gender'] ;?></td>
-	<td><?php echo $row['bday'] ;?></td>
-</tr>
-<?php
-
-}
-//echo 'result->fetch_assoc()';
-
-?>
-</table>
 </body>
 </html>
 <?php
