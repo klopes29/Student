@@ -2,20 +2,25 @@ header{
 	text-align: center;
 	color: #008000;
 	border-style: none;
-    border-radius: 15px;
-       /*ask*/
+    border-radius: 10px;
     width: 50%;
     margin: auto;
 }
 h1{
     font-variant: small-caps;
+    margin-top: 5px;
+    margin-bottom: 5px;
     
+}
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 input[type="radio"] {
 	-webkit-appearance: checkbox; /* Chrome, Safari, Opera */
     -moz-appearance: checkbox;    /* Firefox */
     width: 10%;
-    padding: 12px ;
+    padding: 10px ;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -24,7 +29,7 @@ input[type="radio"] {
 
 input[type="date"]{
 	width: 20%;
-    padding: 12px ;
+    padding: 10px ;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -37,7 +42,7 @@ input[type=date]::-webkit-outer-spin-button {
 
 input[type="number"]{
 	width: 50%;
-    padding: 12px ;
+    padding: 10px ;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -50,7 +55,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type="email"] {
      width: 50%;
-    padding: 12px ;
+    padding: 10px ;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -58,11 +63,16 @@ input[type="email"] {
     
 }
 
+.q{
+
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
 .p{
 	border-style: none;
     border-radius: 15px;
     background-color: #f2f2f2;
-    padding: 50px ;
+    padding: 10px ;
     /*ask*/
     width: 50%;
     margin: auto;
@@ -71,7 +81,7 @@ input[type="email"] {
 
 input[type=text]{
     width: 50%;
-    padding: 12px ;
+    padding: 10px ;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -79,7 +89,7 @@ input[type=text]{
 }
 textarea {
     width: 100%;
-    padding: 12px ;
+    padding: 10px ;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -90,7 +100,7 @@ form  {
 	border-style: none;
     border-radius: 15px;
     background-color: #f2f2f2;
-    padding: 50px ;
+    padding: 10px ;
     /*ask*/
     width: 50%;
     margin: auto;
@@ -102,7 +112,7 @@ input[type=submit],button {
     width: 20%;
     background-color: #4CAF50;
     color: white;
-    padding:14px ;
+    padding:10px ;
     border-style: none;
     border-radius: 40px;
     cursor: pointer;   

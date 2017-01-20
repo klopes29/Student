@@ -1,13 +1,13 @@
-<?php
+<!--<?php
 //echo "<pre>";
 //print_r($_GET);
-if(isset($_GET['last_id'])){
-	$action="tst.php?last_id=".$_GET['last_id'];
-} else{
-	$action="tst.php";
-}
+//if(isset($_GET['last_id'])){
+//	$action="tst.php?last_id=".$_GET['last_id'];
+//} else{
+//	$action="tst.php";
+//}
+?>-->
 
-?>
 <!DOCTYPE html>
 <html>
 
@@ -33,7 +33,7 @@ if(isset($_GET['last_id'])){
 <br>
 
 
-<p class="p" align="center" style="color: red;font-size: 30px;"><i><b>Thank You For Your Valueable Feedback !!! </i> </p>
+<p class="p" align="center" style="color: red;font-size: 50px;"><i><b>Thank You For Your Valuable Feedback !!! </i> </p>
 <br/>
 
 

@@ -40,7 +40,7 @@ function validateForm()
  
 </article>
 
-<h1 align="center"><u>Feedback Form</u><hr/></h1><br>
+<h1 align="center"><u>Feedback Form</u><hr/></h1>
 
 <p class="p" align="center">Thank you for organising your function / event at the Mumbai Race Course.We would request you to kindly spare few minutes to give your very valuable feedback which will go a long way in further improvements.<i>(Please tick “&#x2714;” the appropriate boxes).</i> </p>
 <br/>
@@ -57,7 +57,7 @@ function validateForm()
 <input type="radio" name="venuereason" value="Recommendations"> Recommendations<br>
 <input type="radio" name="venuereason" value="Others"> Other – Please Specify<br>
 <textarea style="display:none;"  name="venuereason_txtarea" id="venuereason_txtarea"></textarea>
-<br><br>
+<br>
 <script type="text/javascript">
  $("input[type='radio']").change(function(){
    
@@ -72,10 +72,9 @@ else
     
 });
 </script>
-<p><b>NOTE :</b> Your  feedback will be kept as confidential.</p>
+<p class="q"><b>NOTE :</b> Your  feedback will be kept as confidential.</p>
 
 <input type="submit" value="NEXT >>" > </input> &nbsp;<button type="reset" value="Reset">Reset</button>
 </Form>
-<br>
 
 </html>
