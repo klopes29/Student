@@ -1,0 +1,123 @@
+header{
+	text-align: center;
+	color: #008000;
+	border-style: none;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+}
+h1{
+    font-variant: small-caps;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+input[type="radio"] {
+	-webkit-appearance: checkbox; /* Chrome, Safari, Opera */
+    -moz-appearance: checkbox;    /* Firefox */
+    width: 10%;
+    padding: 10px ;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+input[type="date"]{
+	width: 20%;
+    padding: 10px ;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+input[type="number"]{
+	width: 50%;
+    padding: 10px ;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+input[type="email"] {
+     width: 50%;
+    padding: 10px ;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+
+.q{
+
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.p{
+	border-style: none;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 10px ;
+    /*ask*/
+    width: 50%;
+    margin: auto;
+   
+}
+
+input[type=text]{
+    width: 50%;
+    padding: 10px ;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea {
+    width: 100%;
+    padding: 10px ;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form  {
+	border-style: none;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 10px ;
+    /*ask*/
+    width: 50%;
+    margin: auto;
+    
+}
+
+input[type=reset] ,
+input[type=submit],button {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding:10px ;
+    border-style: none;
+    border-radius: 40px;
+    cursor: pointer;   
+}
+
+input[type=reset],input[type=submit] ,button:hover {
+    background-color: #008000;
+}
