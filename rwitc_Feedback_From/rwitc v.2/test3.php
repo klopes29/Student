@@ -45,7 +45,7 @@ if(mysqli_query($conn,$sql)){
 
 //$last_id= $conn->insert_id;  //echo($last_id);
 
-$url="fb_4.php?last_id=".$id;
+$url="fb_4.php?last_id=".$id."&code=".$_GET["code"];
  header('Location: '.$url);
 //echo "<pre>";
 //print_r($_POST);

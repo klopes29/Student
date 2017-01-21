@@ -56,7 +56,7 @@ if(mysqli_query($conn,$sql)){
 }
 
 
-$url="fb_16.php?last_id=".$id;
+$url="fb_16.php?last_id=".$id."&code=".$_GET["code"];
  header('Location: '.$url);
 //echo "<pre>";
 //print_r($_POST);

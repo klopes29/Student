@@ -1,3 +1,6 @@
+<!-- Check if Authorise  -->
+<?php include 'check_au.php'; ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -37,7 +40,7 @@ function validateForm()
 <p class="p" align="center">Thank you for organising your function / event at the Mumbai Race Course.We would request you to kindly spare few minutes to give your very valuable feedback which will go a long way in further improvements.<i>(Please tick “&#x2714;” the appropriate boxes).</i> </p>
 <br/>
 
-<Form action="test1.php" id="" Method="POST" onsubmit="return validateForm()">
+<Form action="test1.php?code=<?php echo $code; ?>" id="" Method="POST" onsubmit="return validateForm()">
 
 1.	Where was your function / event held ?
 <br><br>

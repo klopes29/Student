@@ -1,8 +1,10 @@
+<!-- Check if Authorise  -->
+<?php include 'check_au.php'; ?>
 <?php
 //echo "<pre>";
 //print_r($_GET);
 if(isset($_GET['last_id'])){
-	$action="test5.php?last_id=".$_GET['last_id'];
+	$action="test5.php?last_id=".$_GET['last_id']."&code=".$code;
 } else{
 	$action="test5.php";
 }
