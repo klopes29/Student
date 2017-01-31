@@ -83,13 +83,13 @@ $( document ).ready(function() {
   font-family: "Arial Black", Gadget, sans-serif;
   text-align: right;
   font-size: 13px;
-  margin-right: 100px;
+  margin-right: 110px;
 }
 
 p {
   margin-top: 5px;
-  margin-bottom: 5px;
-  margin-right: 100px;
+  margin-bottom:1px;
+  margin-right: 110px;
 }
 
 #clockdiv > div {

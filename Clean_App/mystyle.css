@@ -1,0 +1,64 @@
+header{
+border-style: none;
+    border-radius: 40px;
+    background-color: #f2f2f2;
+    padding: auto; ;
+    margin-bottom: auto;
+    /*ask*/
+    width: auto;
+    margin: auto;
+    color: red;
+    font-style: italic;
+    font-family: cursive;
+}
+
+#image img {
+/* the actual 'watermark' */
+position: absolute;
+align: left;
+	 /* or whatever, position according to taste */
+opacity: 0.5; /* Firefox, Chrome, Safari, Opera, IE >= 9 (preview) */
+filter:alpha(opacity=50); /* for <= IE 8 */
+width: 40px;
+}
+div{
+	   font-style: italic;
+    font-family: cursive;
+}
+button{
+
+	
+}
+input[type="date"]{
+	width: auto;
+
+}
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+footer{
+	font-weight: bolder;
+	font-variant: small-caps;
+	width:auto;
+}
+input[type=submit] {
+    
+    background-color: #4CAF50;
+    color: white;
+   
+    border-style: none;
+    border-radius: 40px;
+    cursor: pointer;   
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.container1{
+    text-align: center;
+    padding: 5px;
+    font-variant: small-caps;
+    background-color: linen;
+}
