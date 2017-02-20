@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="webApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="webApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="webApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="webApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Scheduling App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  
+  <script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDvXREpSnEr0hT-wItMtJwMKGGChMxfWr8",
+      authDomain: "webapp-d9284.firebaseapp.com",
+      databaseURL: "https://webapp-d9284.firebaseio.com",
+      storageBucket: "webapp-d9284.appspot.com",
+      messagingSenderId: "206037599123"
+    };
+    firebase.initializeApp(config);
+  </script>
+  
+  <!-- <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBYEF9vyT_JF_N7q0dpfmuEOt_DauOVcoo",
+      authDomain: "webapp-b7203.firebaseapp.com",
+      databaseURL: "https://webapp-b7203.firebaseio.com",
+      storageBucket: "webapp-b7203.appspot.com",
+      messagingSenderId: "933890318354"
+    };
+    firebase.initializeApp(config);
+  </script> -->
+</head>
+<body>
+  
+  <div ng-view></div>
+
+  
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angularfire/dist/angularfire.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/pickadate/picker.js"></script>
+  <script src="bower_components/pickadate/picker.date.js"></script>
+  <script src="bower_components/pickadate/picker.time.js"></script>
+  <link href="bower_components/pickadate/themes/classic.css">
+  <link href="bower_components/pickadate/themes/classic.date.css">
+  <link href="bower_components/pickadate/themes/classic.time.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.2/angular-materialize.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+  <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.css' type='text/css' media='all' />
+  <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.js'></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="app.js"></script>
+  <script src="home/home.js"></script>
+  <script src="register/register.js"></script>
+  <script src="welcome/welcome.js"></script>
+  <script src="addPost/addPost.js"></script>
+  <script src="booking/booking.js"></script>
+  <script src="profile/profile.js"></script>
+  <script src="cancel/cancel.js"></script>
+  <script src="menu/menu.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('select').material_select('destroy');
+      $('select').material_select();
+      
+      // $("#datetimepicker").on("dp.change", function() {
+      //   $scope.selecteddate = $("#datetimepicker").val();
+      //   alert("selected date is " + $scope.selecteddate);
+      // });
+
+    });
+  </script>
+</body>
+</html>

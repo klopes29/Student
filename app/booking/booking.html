@@ -1,0 +1,142 @@
+<html>
+<head>
+	<title>Booking</title>
+</head>
+<body ng-controller="BookingCtrl">
+	<div class="container">
+		<nav>
+		    <div class="nav-wrapper indigo lighten-3 ">
+		      <a href="#" class="brand-logo center">New Intimation</a>
+		    </div>
+		</nav>
+		<div class="row">
+			<form role="form" name="bookingform" novalidate="">
+
+			  <div class="input-field col s12 m6">
+			     <input  value="DEMO" id="disabled" type="text" class="validate">
+			     <label for="first_name"><b>Client</b></label>
+			   </div>
+
+			  <div class="input-field col s12 m6">
+			     <input  value="MUMBAI" id="disabled" type="text" class="validate">
+			     <label for="first_name"><b>Client Division</b></label>
+			   </div>
+
+			  <div class="input-field col s12 m6">
+			     <input  value="MUMBAI 1" id="disabled" type="text" class="validate">
+			     <label for="first_name"><b>Division Branch</b></label>
+			   </div>
+
+			   <div class="input-field col s12 m6">
+			     <input value="Ajay 9087654321" id="disabled" type="text" class="validate">
+			     <label for="first_name"><b>Agent Name & Mobile</b></label>
+			   </div>
+
+			    <div class="input-field col s12 m6">
+			      <input id="last_name" type="text" class="validate">
+			       <label for="last_name">Customer Name</label>
+			    </div>
+
+			   <div class="input-field col s12 m6">
+			      <input id="last_name" type="text" class="validate">
+			       <label for="last_name">Customer Contact No.</label>
+			    </div>
+
+			   <div class="input-field col s12 m12">
+	            <textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
+	            <label for="textarea1">Customer Address</label>
+	          </div>
+
+	          <div class="input-field col s12 m6">
+			      <input id="last_name" type="text" class="validate">
+			       <label for="last_name">Reg No.</label>
+			   </div>
+
+			   <div class="input-field col s12 m6">
+			      <input id="last_name" type="text" class="validate">
+			       <label for="last_name">Vehicle Type</label>
+			   </div>
+
+				<!--<div class="input-field col s12 m6">
+				    <select required="" aria-required="true" class="browser-default validate" name="h_services" ng-model="h_services" ng-change="changeType()">
+				    	<option value="" disabled selected>What do you want to Clean?</option>
+				    	<option ng-repeat="service in services">{{service.id}}</option>
+				    </select>
+				</div>
+				<div class="input-field col s12 m6">
+				    <select required="" aria-required="true" class="browser-default validate" ng-model="h_types" ng-change="changesize()">
+				    	<option value="" disabled selected>Please Select the Room Size</option>
+				    	<option ng-repeat="type in types">{{type.id}}</option>
+				    </select>
+				</div>
+
+				<div class="input-field col s12 m6">
+					<input readonly="readonly" required="" aria-required="true" ng-model="h_movetypes1" type="text" class="browser-default validate" ng-if="commonvar.flag == 1">
+				    <select required="" aria-required="true" class="browser-default validate" ng-model="$parent.h_movetypes" ng-change="chnagemovetype()" ng-if="commonvar.flag == 0">
+				        <option value="" disabled selected>Please Select the Cleaning Type</option>
+				        <option ng-repeat="movetype in movetypes">{{movetype.id}}</option>
+				    </select>
+ 				</div>
+				
+				<div class="input-field col s6 m3">
+					<input required="" aria-required="true" readonly="readonly" ng-model="h_rate_value" id="h_rate_value" type="text" class="browser-default validate">
+          			<label for="rate_value" ng-class="{'active': commonvar.show_active == '1'}">Rate</label>
+				</div>
+
+				<div class="input-field col s6 m3">
+					<input required="" aria-required="true" readonly="readonly" ng-model="h_hour_value" id="h_hour_value" type="text" class="browser-default validate">
+          			<label for="hour_value" ng-class="{'active': commonvar.show_active == '1'}">Hours</label>
+				</div>
+
+				<div class="input-field col s12 m6">
+					<input type="date" ng-model="h_dot" class="datepicker" id="h_dot">
+					<label>Date</label>
+				</div>
+
+				<div class="input-field col s12 m6">
+					<select required="" aria-required="true" ng-model="h_time" class="browser-default">
+				    	<option value="" disabled selected>Select Time</option>
+				    	<option value="1">10 am</option>
+				      	<option value="2">11 am</option>
+				      	<option value="3">12 pm</option>
+				      	<option value="4">01 pm</option>
+				      	<option value="5">02 pm</option>
+				      	<option value="6">03 pm</option>
+				      	<option value="7">04 pm</option>
+				      	<option value="8">05 pm</option>
+				      	<option value="9">06 pm</option>
+				    </select>
+				</div>-->
+
+				<!--<div class="input-field col s12 m12">
+					<select required="" aria-required="true" class="browser-default validate" ng-model="h_user_address">
+				    	<option value="" disabled selected>Please Select the Address</option>
+				    	<option ng-repeat="address in user_address">{{address.id}}</option>
+				    </select>
+					<!-- <textarea id="textarea1" class="materialize-textarea"></textarea> -->
+          			<!-- <label for="user_address">Address</label> -->
+          		<!--</div>
+          		<!-- <div class="input-field col s12 m6">
+					<select class="browser-default">
+				    	<option value="" disabled selected>City</option>
+				    	<option value="1">Mumbai</option>
+				      	<option value="2">Thane</option>
+				    	<option value="2">Navi Mumbai</option>
+				    </select>
+				</div>
+				<div class="input-field col s12 m6">
+					<input id="pincode" type="text" class="validate">
+          			<label for="pincode">Pincode</label>
+				</div> -->
+				<div class="input-field col s12 m6 offset-m3">
+					<!--<a class="btn col s5" ng-disabled="bookingform.$invalid" ng-click="book()">Save</a>-->
+					<!-- <a class="btn col s5" ng-click="book()">Book</a> -->
+					<a style="margin-left: 10px;" class="btn col s5" ng-click="">Save</a>
+					<a style="margin-left: 10px;" class="btn col s5" ng-click="back()">Back</a>
+				</div>
+
+			</form>
+		</div>	
+	</div>
+</body>
+</html>

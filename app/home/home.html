@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Web App</title>
+</head>
+<body ng-controller="HomeCtrl">
+	<div class="container col s12 m8">
+	
+	<div class="row">
+			<!--<div class="card-panel green lighten-3 col s12 m8 offset-m2 center-align white-text text-lighten-1"><h5 style="font-family: cursive;">Main Menu</h5></div>-->
+		
+			<div class="card-panel indigo lighten-3 col s12 m6 offset-m3 center-align white-text text-lighten-1"><h4>Login</h4></div>
+	</div>
+		<div class="row">
+			<div class="col s12 m8 offset-m2">
+			    <div class="card-panel " >
+			        
+				<form role="form" name="loginForm" novalidate="" autocomplete="off" >
+							<div class="row">
+								<div class="input-field col s12 m8 offset-m2" ng-class="{'has-error': loginForm.email.$invalid && loginForm.email.$touched}">
+									<input type="email" name="email" id="emailtxt" ng-model="user.email" required="" class="validate" autocomplete="off"  />
+									<label for="emailtxt">Username</label>
+									<small class="help-block" ng-show="loginForm.email.$invalid && loginForm.email.$touched"></small>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12 m8 offset-m2" ng-class="{'has-error': loginForm.password.$invalid && loginForm.password.$touched}">
+									<label for="password">Password</label>
+									<input type="password" name="password" id="password" ng-model="user.password" class="validate" required="" ng-minlength=8 />
+									<small class="help-block" ng-show="loginForm.password.$error.minlength && loginForm.password.$touched">Password must be at least 8 characters</small>
+								</div>
+							</div>
+							<div class="row" style="display: none;">
+								<div class="col s12 m8 offset-m2">
+									<lable><a href="#/register" class="indigo-text text-darken-1">Sign Up</a></lable>
+									<p ng-show="errorMsg" class="red-text text-lighten-2">{{errorMessage}}</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s12 m8 offset-m2">
+									
+									<button type="submit" class="waves-effect waves-light indigo darken-1 btn-large col s12" ng-disabled="loginForm.$invalid" ng-click="signIn()">Sign In</button>
+								</div>
+							</div>
+							    
+							<div class="row">
+								<div class="input-field col s12 m8 offset-m2">
+									<a class="waves-effect waves-light btn-large white lighten-1 grey-text col s12" ng-click="login()"><i class="material-icons left"><img src="http://diylogodesigns.com/blog/wp-content/uploads/2016/04/google-logo-icon-PNG-Transparent-Background.png" width="25px" /></i>Sign In With Google</a>
+					    		</div>
+							</div>
+						</form>
+
+
+
+			    </div>
+			</div>
+		</div>
+        
+			
+	</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Profile</title>
+</head>
+<body ng-controller="BookingCtrl">
+	<div class="container">
+		<nav>
+		    <div class="nav-wrapper red lighten-3">
+		      <a href="#profile" class="brand-logo center">Profile</a>
+		    </div>
+		</nav>
+		<div id="card-alert" class="card green" style="height: 28px;" ng-if="commonvar.success_flag == 1">
+            <div class="card-content white-text" style="padding: 3px;">
+                <p><i class="mdi-navigation-check"></i> SUCCESS : Profile Updated successfully.</p>
+            </div>
+        </div>
+		<div class="row">
+			<form role="form" name="profileform" novalidate="">
+				<div class="input-field col s12 m6">
+					<input ng-model="h_name" required="" aria-required="true" id="h_name" type="text" class="validate">
+          			<label for="name" ng-class="{'active': commonvar.show_active == '1'}"></label>
+				</div>
+
+				<div class="input-field col s12 m12" ng-repeat="address in addreses">
+      				<textarea required="" aria-required="true" style="width: 90%;" id=textarea_{{address.id}} class="materialize-textarea validate" maxlength="225" rows="2" ng-model="address.data"></textarea>
+					<label id="label_{{address.id}}" for="{{address.id}}" ng-class="{'active': commonvar.show_active == '1'}">Address</label>
+					<!--<button id="button_{{address.id}}" ng-if="commonvar.flag == 1" class="btn btn-info" ng-click="remove(address.id)">Remove</button>-->
+					<a id="button_{{address.id}}" style="cursor: pointer;" title="Remove" ng-if="commonvar.flag == 1" ng-click="remove(address.id)"><i class="small material-icons teal-text text-lighten-1">cancel</i></a>
+				</div>
+
+				<div class="input-field col s12 m6">
+					<!--<button ng-if="commonvar.flag == 1" class="btn btn-info" ng-click="addMore()">Add More</button>-->
+					<a style="cursor: pointer;" title="Add New" ng-if="commonvar.flag == 1" ng-click="addMore()"><i class="medium material-icons teal-text text-lighten-1">add</i></a>
+				</div>
+
+          		<div class="input-field col s12 m6 offset-m3">
+					<a class="btn col s5" ng-disabled="profileform.$invalid" ng-click="saveprofile()">Save</a>
+					<a style="margin-left: 10px;" class="btn col s5" ng-click="back()">Back</a>
+				</div>
+			</form>
+		</div>
+		</form>	
+	</div>
+</body>
+</html>
